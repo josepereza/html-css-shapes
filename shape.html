@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .star-shape {
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            background-color: #59d1f2;
+            shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            float: left;
+        }
+
+        .shape-from-image {
+            width: 150px;
+            height: 150px;
+            shape-outside: url(https://res.cloudinary.com/dq6tqnvbh/image/upload/v1552834755/5a366dd97df550.5130252915135165055159.png);
+            float: left;
+            shape-margin: 5px;
+            shape-image-threshold: 0.1;
+        }
+
+        .some-shape {
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            background-color: #59d1f2;
+            shape-outside: circle();
+            clip-path: circle();
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="star-shape"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue dignissim tortor, a vestibulum
+            orci blandit ac. Sed interdum nec sem sit amet consectetur. Vestibulum auctor, risus vitae lacinia
+            elementum, nisi tellus porttitor arcu, vel porta leo felis in augue. Duis laoreet tortor at luctus
+            porttitor. Nulla bibendum neque id est pharetra sagittis. Sed bibendum urna erat, vitae laoreet risus
+            volutpat et. Nunc pharetra risus aliquam arcu pellentesque rutrum. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia Curae;</p>
+    </div>
+    <div style="clear:both"></div>
+    <img src="https://res.cloudinary.com/dq6tqnvbh/image/upload/v1552834755/5a366dd97df550.5130252915135165055159.png"
+        class="shape-from-image" />
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue dignissim tortor, a vestibulum
+            orci blandit ac. Sed interdum nec sem sit amet consectetur. Vestibulum auctor, risus vitae lacinia
+            elementum, nisi tellus porttitor arcu, vel porta leo felis in augue. Duis laoreet tortor at luctus
+            porttitor. Nulla bibendum neque id est pharetra sagittis. Sed bibendum urna erat, vitae laoreet risus
+            volutpat et. Nunc pharetra risus aliquam arcu pellentesque rutrum. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia Curae;>Donec ut convallis lacus. Vestibulum blandit sem leo, non
+            tempus est fringilla ac. Nunc scelerisque maximus tortor, eu pulvinar neque placerat quis. Vestibulum
+            fringilla scelerisque tristique. Nulla facilisi. Duis sed sapien id ligula interdum semper. Praesent auctor
+            erat condimentum elit venenatis fringilla. Aliquam fermentum mattis massa, quis vulputate turpis convallis
+            sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed dignissim massa at leo
+            dignissim, eget varius lacus finibus.</p>
+    </div>
+    <div class="some-shape"></div>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue dignissim tortor, a vestibulum
+            orci blandit ac. Sed interdum nec sem sit amet consectetur. Vestibulum auctor, risus vitae lacinia
+            elementum, nisi tellus porttitor arcu, vel porta leo felis in augue. Duis laoreet tortor at luctus
+            porttitor. Nulla bibendum neque id est pharetra sagittis. Sed bibendum urna erat, vitae laoreet risus
+            volutpat et. Nunc pharetra risus aliquam arcu pellentesque rutrum. Vestibulum ante ipsum primis in faucibus
+            orci luctus et ultrices posuere cubilia Curae;</p>
+
+        <p>Donec ut convallis lacus. Vestibulum blandit sem leo, non tempus est fringilla ac. Nunc scelerisque maximus
+            tortor, eu pulvinar neque placerat quis. Vestibulum fringilla scelerisque tristique. Nulla facilisi. Duis
+            sed sapien id ligula interdum semper. Praesent auctor erat condimentum elit venenatis fringilla. Aliquam
+            fermentum mattis massa, quis vulputate turpis convallis sit amet. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Sed dignissim massa at leo dignissim, eget varius lacus finibus.</p>
+    </div>
+</body>
+
+</html>
